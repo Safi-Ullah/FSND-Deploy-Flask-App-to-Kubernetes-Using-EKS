@@ -1,1 +1,4 @@
-JWT_SECRET=mysecret
+JWT_SECRET='++secret++'
+LOG_LEVEL=DEBUG
+
+aws ssm put-parameter --name JWT_SECRET --value "++secret++" --type SecureString
